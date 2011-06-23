@@ -1,5 +1,9 @@
 set nocompatible
 
+set number
+set ruler
+syntax on
+
 " Set encoding
 set encoding=utf-8
 
@@ -9,7 +13,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list listchars=tab:\ \ ,trail:Â·
+set list listchars=tab:\ \ ,trail:·
 
 " Searching
 set hlsearch
@@ -43,7 +47,8 @@ let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
 
 " Default color scheme
-color desert
+set background=dark
+colorscheme solarized
 
 " Directories for swp files
 set backupdir=~/.vim/backup
