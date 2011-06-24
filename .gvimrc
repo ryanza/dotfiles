@@ -56,6 +56,8 @@ set visualbell
 
 " Start without the toolbar
 set guioptions-=T
+set guioptions-=L
+set guioptions-=r
 
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
@@ -203,3 +205,6 @@ call s:DefineCommand("touch", "Touch")
 call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")
 call s:DefineCommand("mkdir", "Mkdir")
+
+" Set transparency
+set transparency=5
